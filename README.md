@@ -2,6 +2,7 @@
 
 <p align="center" style="text-align:center">
   <img src="https://raw.githubusercontent.com/Jervx/Calculator/master/Calculator.png" width="35%">
+  <img src="https://raw.githubusercontent.com/Jervx/Calculator/master/calculator.gif" width="35%">
 </p>
 
 ## Java
