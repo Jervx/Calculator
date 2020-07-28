@@ -1,6 +1,8 @@
 # Calculator
 
-<img style="display:block; text-align:center;" align="center" src="https://raw.githubusercontent.com/Jervx/Calculator/master/Calculator.png" width="35%">
+<center>
+  <img src="https://raw.githubusercontent.com/Jervx/Calculator/master/Calculator.png" width="35%">
+</center>
 
 ## Java
 Java Version: Java 14
