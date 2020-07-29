@@ -29,7 +29,7 @@
       <Button fx:id="b9" layoutX="160.0" layoutY="302.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(243,243,243);" text="9" textFill="#7c7c7c" />
       <Button fx:id="b0" layoutX="91.0" layoutY="476.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(243,243,243);" text="0" textFill="#7c7c7c" />
       <Button fx:id="dot" layoutX="160.0" layoutY="476.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(245,245,245);" text="." textFill="#7c7c7c" />
-      <Button fx:id="sqrt" layoutX="382.0" layoutY="362.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(232,232,245);" text="√" textFill="#7c7c7c" />
+      <Button fx:id="sqrt" layoutX="382.0" layoutY="362.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(232,232,245);" text="^" textFill="#7c7c7c" />
       <Button fx:id="pi" layoutX="235.0" layoutY="422.0" mnemonicParsing="false" onAction="#PI" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(232,232,245);" text="𝜋 " textFill="#7c7c7c" />
       <Button fx:id="opar" layoutX="235.0" layoutY="304.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(232,232,245);" text="(" textFill="#7c7c7c" />
       <Button fx:id="clpar" layoutX="235.0" layoutY="362.0" mnemonicParsing="false" onAction="#clicked" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: rgb(232,232,245);" text=")" textFill="#7c7c7c" />
