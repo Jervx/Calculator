@@ -1,8 +1,8 @@
 # Calculator
 
 <p align="center" style="text-align:center">
-  <img src="https://raw.githubusercontent.com/Jervx/Calculator/master/light.png" width="35%">
-  <img src="https://raw.githubusercontent.com/Jervx/Calculator/master/dark.png" width="35%">
+  <img height="700px" src="https://raw.githubusercontent.com/Jervx/Calculator/master/light.png" width="35%">
+  <img height="700px" src="https://raw.githubusercontent.com/Jervx/Calculator/master/dark.png" width="35%">
 </p>
 
 ## Java
