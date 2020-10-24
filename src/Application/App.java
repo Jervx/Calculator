@@ -10,11 +10,21 @@ public class App extends Application {
 
     @Override
     public void start(Stage mainStg) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("clc.model"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("clc.md"));
+
+        Parent root = loader.load();
         mainStg.setTitle("Calculator");
-        mainStg.setScene(new Scene(root,464 , 542));
+
+        Scene sc = new Scene(root,464 , 470);
+
+        Controller controller = (Controller)loader.getController();
+        controller.currentScene = sc;
+
+        mainStg.setScene(sc);
         mainStg.setResizable(false);
         mainStg.show();
+
+        controller.changeStyle();
     }
 
     public static void main(String[] args) {

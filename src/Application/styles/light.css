@@ -1,0 +1,109 @@
+.root{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-font-size: 18px;
+}
+
+#root{
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+#container_2{
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+
+.t_area{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-text-box-border: transparent;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-text-fill: #575757;
+    -fx-border-style: none;
+    -fx-font-size: 18px;
+}
+
+.t_area .content{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-style: none;
+    -fx-background-radius: 0;
+}
+
+.t-area:focused .content {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.t_area .scroll-pane{
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.t_area .scroll-bar{
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.t_area .scroll-bar:vertical .thumb{
+    -fx-background-color: rgb(244, 244, 244);
+}
+
+.t_area .scroll-bar:horizontal .thumb{
+    -fx-background-color: rgb(244, 244, 244);
+}
+
+
+.num_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(248,248,248);
+    /*-fx-background-color: rgb(255, 255, 255);*/
+    -fx-text-fill: #7c7c7c;
+}
+
+.clicked{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(241, 238, 238);
+    /*-fx-background-color: rgb(255, 255, 255);*/
+    -fx-text-fill: #7c7c7c;
+}
+
+.num_btn:hover {
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(241, 241, 241);
+}
+
+.op_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(248,248,248);
+    /*-fx-background-color: rgb(232,232,245);*/
+    -fx-text-fill: #7c7c7c;
+}
+
+#equal_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(232,232,245);
+    -fx-text-fill: #7c7c7c;
+    -fx-font-size: 25px;
+    -fx-text-fill: #4d5451
+}
+
+#CE_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(232,232,245);
+    -fx-text-fill: #7c7c7c;
+}
+
+#del_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(238, 238, 248);
+    -fx-text-fill: #7c7c7c;
+}
+
+#history_lbl{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-text-fill: #328a64;
+    -fx-font-size:13px;
+}
+
+#theme_btn{
+    -fx-font-size:13px;
+}
+
+.line{
+    -fx-stroke: #b8b5b5;
+}

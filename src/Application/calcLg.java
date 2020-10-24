@@ -5,13 +5,10 @@ import java.util.Stack;
 public class calcLg {
 
     public boolean isOperator(char a){
-        if(a == '+') return true;
-        else if(a == '-') return true;
-        else if(a == '*') return true;
-        else if(a == '^') return true;
-        else if(a == '/') return true;
-        else if(a == '(' || a ==')') return true;
-        return false;
+        switch (a){
+            case '+', '-', '*', '^', '/', '(', ')' : return true;
+            default: return false;
+        }
     }
 
     public int getPriority(char ch){
@@ -26,16 +23,14 @@ public class calcLg {
     }
 
     public boolean isOperatorO(char a){
-        if(a == '+') return true;
-        else if(a == '-') return true;
-        else if(a == '*') return true;
-        else if(a == '^') return true;
-        else if(a == '/') return true;
-        return false;
+        switch (a){
+            case '+', '-', '*', '^', '/' : return true;
+            default: return false;
+        }
     }
 
     double operation(char op, double a, double b){
-        System.out.println("OPERATION CALL "+op+a + ": "+ b);
+        System.out.println("OPERATION CALL "+op/*+"   a: "+a+"  b: "+b*/);
         switch(op){
             case '+': return a + b;
             case '-': return a - b;
@@ -59,13 +54,10 @@ public class calcLg {
     public String calculate(Stack <String> content){
         String cpy = "";
         for(int x = 0; x < content.size(); x++) cpy+=(content.get(x))+(x == content.size()-1?"":",");
-
         String str [] = cpy.split(",");
-
         Stack <Double> nums = new Stack<>();
         try {
             for (int x = 0; x < str.length; x++) {
-                System.out.println("Focus -.->" + str[x]);
                 if (!isOperatorOnly(str[x])) { nums.push(Double.parseDouble(str[x])); }
                 else {
                     double a = nums.pop(), b = nums.pop();
@@ -73,16 +65,16 @@ public class calcLg {
                 }
             }
         }catch (Exception e){ return "Mali Syntax My Dude"; }
-        return nums.pop().toString();
+        return String.format("%.2f",nums.pop());
     }
 
     public String toPost(String [] inf) {
         Stack <String> postF = new Stack<>();
         Stack <String> ops = new Stack<>();
         try {
+            String prev = "-";
             for (int x = 0; x < inf.length; x++) {
                 String focus = inf[x];
-                System.out.println("-> " + focus);
                 if (isValidNum(focus)) { postF.push(focus); }
                 else if (focus.contains("(")) { ops.push(focus); }
                 else if (focus.contains(")")) {
@@ -96,6 +88,7 @@ public class calcLg {
                     }
                     ops.push(focus);
                 }
+                prev = focus;
             }
 
             while (!ops.isEmpty()) {
@@ -107,21 +100,25 @@ public class calcLg {
     }
 
     public String formated(String str){
+        str = str.replaceAll("\\s","");
         String finalStr = "";
 
         int len = str.length();
         boolean isPrevO = false;
 
+        String prev = "-";
+
         for(int x = 0; x < len; x++){
             char f = str.charAt(x);
-
+            if(isValidNum(prev) && (f +"").equals("(")) finalStr +="*,";
+            if(f == '(' && prev.equals(")")) finalStr+="*,";
+            prev = f+"";
             if(isOperator(f)){
                 if(x-1 >= 0)
                     if(!isOperator(str.charAt(x-1))) isPrevO = true;
                     else isPrevO = false;
                 else isPrevO = false;
             }else isPrevO = false;
-
             if(f == '(' || f == ')') finalStr += f+",";
             else if(isValidNum(f+"")){
                 finalStr += f;
@@ -155,6 +152,7 @@ public class calcLg {
                 }
             }else if(isOperatorO(f)) finalStr += f +",";
         }
+        //System.out.println("DEBUG: "+finalStr);
         return toPost(finalStr.split(","));
     }
 }

@@ -1,0 +1,125 @@
+.root{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-font-size: 18px;
+    -fx-text-fill: rgb(209, 209, 209);
+}
+
+#root{
+    -fx-background-color: rgb(24, 24, 24);
+}
+
+#container_2{
+    -fx-background-color: rgb(24, 24, 24);
+}
+
+.t_area{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-text-box-border: transparent;
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-text-fill: rgb(209, 209, 209);
+    -fx-border-style: none;
+    -fx-font-size: 18px;
+}
+
+.t_area .content{
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-border-style: none;
+    -fx-background-radius: 0 ;
+}
+
+.t-area:focused .content {
+    -fx-background-color: rgb(24, 24, 24);
+}
+
+.t_area .scroll-pane{
+    -fx-background-color: rgb(24, 24, 24);
+}
+
+.t_area .scroll-bar{
+    -fx-background-color: rgb(24, 24, 24);
+}
+
+.t_area .scroll-bar:vertical .thumb{
+    -fx-background-color: rgb(41, 41, 41);
+}
+
+.t_area .scroll-bar:horizontal .thumb{
+    -fx-background-color: rgb(41, 41, 41);
+}
+
+.num_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-text-fill: rgb(209, 209, 209);
+}
+
+.clicked{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(34, 34, 34);
+    /*-fx-background-color: rgb(255, 255, 255);*/
+    -fx-text-fill: rgb(209, 209, 209);
+}
+
+.num_btn:hover{
+    -fx-background-color: rgb(34, 34, 34);
+}
+
+.op_btn{
+    -fx-font-family: 'Gotham Pro Light';
+   /* -fx-background-color: rgb(30, 30, 30);*/
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-text-fill: rgb(209, 209, 209);
+}
+
+.op_btn:hover{
+    -fx-background-color: rgb(34, 34, 34);
+}
+
+#equal_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    /*-fx-background-color: rgb(30, 30, 30);*/
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-font-size: 25px;
+    -fx-text-fill: rgb(179, 178, 178);
+}
+
+#equal_btn:hover{
+    -fx-background-color: rgb(34, 34, 34);
+}
+
+#CE_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    /*-fx-background-color: rgb(30, 30, 30);*/
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-text-fill: rgb(179, 178, 178);
+}
+
+#CE_btn:hover{
+    -fx-background-color: rgb(34, 34, 34);
+}
+
+#del_btn{
+    -fx-font-family: 'Gotham Pro Light';
+    /*-fx-background-color: rgb(30, 30, 30);*/
+    -fx-background-color: rgb(24, 24, 24);
+    -fx-text-fill: rgb(179, 178, 178);
+}
+
+#del_btn:hover{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-background-color: rgb(44, 44, 44);
+}
+
+#history_lbl{
+    -fx-font-family: 'Gotham Pro Light';
+    -fx-text-fill: #b9c3ca;
+    -fx-font-size:13px;
+}
+
+#theme_btn{
+    -fx-font-size:13px;
+}
+
+.line {
+    -fx-stroke: rgb(74, 74, 74);
+}
